@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /task-agent-api
 
 # Copy and install dependencies separately for better caching
-COPY requirements.txt .
+COPY requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the project files
